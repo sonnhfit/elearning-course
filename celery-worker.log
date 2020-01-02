@@ -1,0 +1,387 @@
+[2020-01-02 09:41:16,018: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2020-01-02 09:41:18,028: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2020-01-02 09:41:22,048: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2020-01-02 09:41:28,068: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 8.00 seconds...
+
+[2020-01-02 09:41:36,080: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 10.00 seconds...
+
+[2020-01-02 09:41:46,098: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 12.00 seconds...
+
+[2020-01-02 09:41:58,127: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 14.00 seconds...
+
+[2020-01-02 09:42:12,157: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 16.00 seconds...
+
+[2020-01-02 09:42:28,190: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 18.00 seconds...
+
+[2020-01-02 09:42:46,222: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 20.00 seconds...
+
+[2020-01-02 09:43:06,250: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 22.00 seconds...
+
+[2020-01-02 09:43:28,278: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 24.00 seconds...
+
+[2020-01-02 09:43:52,311: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 26.00 seconds...
+
+[2020-01-02 09:44:18,353: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 28.00 seconds...
+
+[2020-01-02 09:44:46,389: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 30.00 seconds...
+
+[2020-01-02 09:45:16,427: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:45:48,476: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:46:20,526: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:46:52,573: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:47:24,610: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:47:56,660: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:48:28,699: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:49:00,740: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:49:32,789: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:50:04,838: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:50:36,886: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:51:08,933: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:51:40,981: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:52:13,029: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:52:45,073: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:53:17,108: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:53:49,149: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:54:21,198: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:54:53,245: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:55:25,292: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:55:57,335: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:56:29,382: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:57:01,429: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:57:33,476: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:58:05,516: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:58:37,553: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:59:09,599: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 09:59:41,646: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:00:13,692: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:00:45,741: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:01:17,777: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:01:49,824: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:02:21,862: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:02:53,900: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:03:25,949: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:03:57,998: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:04:30,037: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:05:02,076: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:05:34,120: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:06:06,166: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:06:38,214: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:07:10,261: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:07:42,308: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:08:14,349: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:08:46,391: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:09:18,438: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:09:50,483: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:10:22,532: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:10:54,575: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:11:26,614: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:11:58,654: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:12:30,699: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:13:02,747: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:13:34,793: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:14:06,829: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:14:38,868: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:15:10,916: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:15:42,963: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:16:15,008: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:16:47,047: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:17:19,090: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:17:51,131: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:18:23,173: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:18:55,212: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:19:27,253: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:19:59,295: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:20:31,344: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:21:03,390: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:21:35,439: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:22:07,480: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:22:39,524: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:23:11,562: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:23:43,602: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:24:15,649: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:24:47,690: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:25:19,742: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:25:51,791: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:26:23,833: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:26:55,874: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:27:27,915: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:27:59,955: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:28:31,996: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:29:04,036: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:29:36,084: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:30:08,123: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 32.00 seconds...
+
+[2020-01-02 10:30:40,166: CRITICAL/MainProcess] Unrecoverable error: OperationalError('[Errno 111] Connection refused',)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 137, in _connect
+    host, port, family, socket.SOCK_STREAM, SOL_TCP)
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -9] Address family for hostname not supported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 439, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 430, in ensure_connection
+    callback, timeout=timeout)
+  File "/usr/local/lib/python3.6/site-packages/kombu/utils/functional.py", line 344, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 283, in connect
+    return self.connection
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 839, in connection
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 794, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.6/site-packages/kombu/transport/pyamqp.py", line 130, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/amqp/connection.py", line 311, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 77, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 148, in _connect
+    "failed to resolve broker hostname"))
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 161, in _connect
+    self.sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/usr/local/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python3.6/site-packages/celery/bootsteps.py", line 369, in start
+    return self.obj.start()
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 317, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/consumer/connection.py", line 23, in start
+    c.connection = c.connect()
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 404, in connect
+    conn = self.connection_for_read(heartbeat=self.amqheartbeat)
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 411, in connection_for_read
+    self.app.connection_for_read(heartbeat=heartbeat))
+  File "/usr/local/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 435, in ensure_connected
+    callback=maybe_shutdown,
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 430, in ensure_connection
+    callback, timeout=timeout)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 444, in _reraise_as_library_errors
+    sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 439, in _reraise_as_library_errors
+    yield
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 430, in ensure_connection
+    callback, timeout=timeout)
+  File "/usr/local/lib/python3.6/site-packages/kombu/utils/functional.py", line 344, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 283, in connect
+    return self.connection
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 839, in connection
+    self._connection = self._establish_connection()
+  File "/usr/local/lib/python3.6/site-packages/kombu/connection.py", line 794, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/usr/local/lib/python3.6/site-packages/kombu/transport/pyamqp.py", line 130, in establish_connection
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/amqp/connection.py", line 311, in connect
+    self.transport.connect()
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 77, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 148, in _connect
+    "failed to resolve broker hostname"))
+  File "/usr/local/lib/python3.6/site-packages/amqp/transport.py", line 161, in _connect
+    self.sock.connect(sa)
+kombu.exceptions.OperationalError: [Errno 111] Connection refused

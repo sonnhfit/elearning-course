@@ -1,0 +1,116 @@
+{% extends "manage.html" %}
+{% load custom_filters %}
+{% block pagetitle %} Moderator's Dashboard {% endblock pagetitle %}
+
+{% block script %}
+<script language="JavaScript" type="text/javascript" src="{{ URL_ROOT }}/static/yaksh/js/moderator_dashboard.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<center><h4 class="yakshgreen">List of quizzes! Click on the given links to have a look at answer papers for a quiz.</h4></center>
+<div class="row justify-content-center">
+<div class="col-md-10 ">
+  <div class="table-wrapper-2">
+<table class="table table-bordered table-responsive-sm">
+  <tr class="yakshlabel">
+    <th class="yakshred text-center"><i class="fa fa-book"></i> Courses</th>
+    <th class="yakshred text-center"><i class="fa fa-puzzle-piece"></i> Quizzes</th>
+  </tr>
+    {% for course in courses %}
+        <tr>
+            <td>
+                <a href="{{URL_ROOT}}/exam/manage/course_detail/{{course.id}}" class="btn btn-outline-success">
+                <i class="fa fa-caret-right"></i> {{ course }}
+                </a>
+            </td>
+            <td>
+                {% get_course_details course as course_details %}
+                {% if course_details %}
+                <table class="table table-bordered table-responsive-sm">
+                <tr class="yakshlight">
+                  <th>Quiz</th>
+                  <th>Taken By</th>
+                  <th>No. of users Passed</th>
+                  <th>No. of users Failed</th>
+                </tr>
+                  {% for quiz, users_no, passed, failed in course_details %}
+                  <tr>
+                    <td>
+                    <a href="{{URL_ROOT}}/exam/manage/monitor/{{ quiz.id }}/{{course.id}}" >{{ quiz.description }}</a>
+                    </td>
+                    <td>
+                      {{users_no}} user(s)
+                    </td>
+                    <td>
+                      {{passed}}
+                    </td>
+                    <td>
+                      {{failed}}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </table>
+                {% else %}
+                  No Quizzes
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+</div>
+
+<hr>
+<center>
+    <a href="{{URL_ROOT}}/exam/manage/add_course" class="btn btn-primary">
+      Add New Course
+    </a>
+    <a href="{{URL_ROOT}}/exam/manage/create_demo_course" class="btn btn-primary">
+      Create Demo Course
+    </a>
+    <a data-toggle="collapse" data-target="#help" class="btn">
+      <span class="fa fa-question-circle yakshred"></span> What's This
+    </a>
+    <div id="help" class="collapse">
+      <ul class="list">
+        <li>A Demo Course and Demo Quiz will be created (Click Courses link on nav bar to view courses).</li>
+        <li>Some Demo Questions are also created for you (Click Questions link on nav bar to view questions).</li>
+        <li>In Courses you can view Demo Quiz.</li>
+        <li>Click on the Demo Quiz and Click on User Mode or God Mode to take the quiz.</li>
+        <li>You can also edit the Demo quiz.</li>
+      </ul>
+    </div>
+    <center>
+    {% if msg %}
+      <h4 class="alert alert-info col-md-10 animated flash">{{ msg }}</h4>
+    {% endif %}
+    </center>
+</center>
+{% if trial_paper %}
+  <br/>
+  <p><center><strong> You have trial papers </strong><br/></center></p>
+  &nbsp;&nbsp;<input type="checkbox" class="selectall"/>&nbsp;&nbsp;Select all
+  <br/>
+  <div id="trial">
+  <table class="table table-bordered table-responsive-sm">
+  <form action="" method="post">
+  {% csrf_token %}
+   {% for paper in trial_paper %}
+  <tr>
+  <td> <input type = "checkbox" name="delete_paper" class="check" value = {{paper.id}}></input></td>
+  <td> <a href="{{URL_ROOT}}/exam/manage/gradeuser/{{paper.question_paper.quiz.id}}/{{paper.course.id}}/">{{paper.question_paper.quiz.description}}</a></td>
+  </tr>
+  {% endfor %}
+  </table>
+<center>
+    <button class="btn btn-danger" type="submit">
+  Delete Selected
+  <span class="glyphicon glyphicon-trash"></span>
+</button></center>
+  </form>
+  </div>
+  {% endif %}
+</div>
+</div>
+{% endblock %}
+

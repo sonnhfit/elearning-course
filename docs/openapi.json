@@ -1,0 +1,1184 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "TrackingCar Server API",
+      "description": "Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.",
+      "version": "0.1.9"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:8000",
+        "description": "Staging server"
+      },
+      {
+        "url": "http://localhost:8000",
+        "description": "Localhost server"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Auth",
+        "description": "Register/login APIs"
+      },
+      {
+        "name": "Users",
+        "description": "Related users APIs"
+      }
+    ],
+    "paths": {
+      "/login/email/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login using email",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "format": "email"
+                    },
+                    "password": {
+                      "type": "string",
+                      "format": "password"
+                    },
+                    "device_id": {
+                      "type": "string"
+                    },
+                    "device_type": {
+                      "type": "string",
+                      "enum": [
+                        "ios",
+                        "android"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "email",
+                    "password",
+                    "device_id",
+                    "device_type"
+                  ],
+                  "example": {
+                    "email": "deadpool@gmail.com",
+                    "password": "bottomsecret",
+                    "device_id": "IOS-123-456",
+                    "device_type": "ios"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "$ref": "#/components/responses/AccessTokenResponse"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "description": "UNAUTHENTICATED: Incorrect email or password"
+            }
+          }
+        }
+      },
+      "/login/facebook/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login using Facebook",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "fb_access_token": {
+                      "type": "string"
+                    },
+                    "device_id": {
+                      "type": "string"
+                    },
+                    "device_type": {
+                      "type": "string",
+                      "enum": [
+                        "ios",
+                        "android"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fb_access_token",
+                    "device_id",
+                    "device_type"
+                  ],
+                  "example": {
+                    "fb_access_token": "EAABwDDAMZAQ8BACGnbwZCDyETZANZAhrsq87iXB6SzZAOIY",
+                    "device_id": "IOS-123-456",
+                    "device_type": "ios"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "$ref": "#/components/responses/AccessTokenResponse"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            }
+          }
+        }
+      },
+      "/login/line/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login using LINE",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "line_access_token": {
+                      "type": "string"
+                    },
+                    "device_id": {
+                      "type": "string"
+                    },
+                    "device_type": {
+                      "type": "string",
+                      "enum": [
+                        "ios",
+                        "android"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "line_access_token",
+                    "device_id",
+                    "device_type"
+                  ],
+                  "example": {
+                    "line_access_token": "EAABwDDAMZAQ8BACGnbwZCDyETZANZAhrsq87iXB6SzZAOIY",
+                    "device_id": "IOS-123-456",
+                    "device_type": "ios"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "$ref": "#/components/responses/AccessTokenResponse"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            }
+          }
+        }
+      },
+      "/login/device/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Login using Device ID",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "device_id": {
+                      "type": "string"
+                    },
+                    "device_type": {
+                      "type": "string",
+                      "enum": [
+                        "ios",
+                        "android"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "device_id",
+                    "device_type"
+                  ],
+                  "example": {
+                    "device_id": "IOS-123-456",
+                    "device_type": "ios"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "$ref": "#/components/responses/AccessTokenResponse"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            }
+          }
+        }
+      },
+      "/register/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Register new account using Email",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "format": "email"
+                    },
+                    "password": {
+                      "type": "string",
+                      "format": "password"
+                    }
+                  },
+                  "required": [
+                    "email",
+                    "password"
+                  ],
+                  "example": {
+                    "email": "deadpool@gmail.com",
+                    "password": "topsecret"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "New user information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "409": {
+              "description": "CONFLICT: Email already taken"
+            }
+          }
+        }
+      },
+      "/confirm/{token}/": {
+        "get": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Activate new email account",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "parameters": [
+            {
+              "name": "token",
+              "in": "path",
+              "schema": {
+                "type": "string"
+              },
+              "required": true,
+              "description": "Confirm Token",
+              "example": "EAABwDDAMZAQ8BACGnbwZCDyETZANZAhrsq87iXB6SzZAOIY"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "New user information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            },
+            "404": {
+              "$ref": "#/components/responses/404NotFoundResponse"
+            }
+          }
+        }
+      },
+      "/forgot-password/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Get a reset password token",
+          "description": "If the email exists, the server will sent an email including reset-password token",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "format": "email"
+                    }
+                  },
+                  "required": [
+                    "email"
+                  ],
+                  "example": {
+                    "email": "deadpool@gmail.com"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "204": {
+              "description": "NO CONTENT"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            }
+          }
+        }
+      },
+      "/reset-password/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Reset password for an account",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "reset_token": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string",
+                      "format": "password"
+                    },
+                    "confirm_password": {
+                      "type": "string",
+                      "format": "password"
+                    }
+                  },
+                  "required": [
+                    "reset_token",
+                    "password",
+                    "confirm_password"
+                  ],
+                  "example": {
+                    "reset_token": "847e9015-e465-4fe6-9d1b-9663b6a82916",
+                    "password": "bottomsecret",
+                    "confirm_password": "bottomsecret"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/logout/": {
+        "post": {
+          "tags": [
+            "Auth"
+          ],
+          "summary": "Log user out",
+          "description": "Remove current access token",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "NO CONTENT"
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get current user information",
+          "description": "Get user info by using access token",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "User Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Update user information",
+          "description": "Update current user information",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": {
+                      "type": "string"
+                    }
+                  },
+                  "example": {
+                    "username": "Batman"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/password/": {
+        "put": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Update user password",
+          "description": "Update user password",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "old_password": {
+                      "type": "string"
+                    },
+                    "new_password": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "old_password",
+                    "new_password"
+                  ],
+                  "example": {
+                    "old_password": "topsecret",
+                    "new_password": "bottomsecret"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/facebook/": {
+        "put": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Link SNS current account with Facebook",
+          "description": "Link current account with Facebook",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "fb_access_token": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "fb_access_token"
+                  ],
+                  "example": {
+                    "fb_access_token": "EAABwDDAMZAQ8BACGnbwZCDyETZANZAhrsq87iXB6SzZAOIY"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/line/": {
+        "put": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Link SNS current account with LINE",
+          "description": "Link SNS current account with LINE",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "line_access_token": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "line_access_token"
+                  ],
+                  "example": {
+                    "line_access_token": "EAABwDDAMZAQ8BACGnbwZCDyETZANZAhrsq87iXB6SzZAOIY"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/rating/": {
+        "put": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Rating app service",
+          "description": "Rating app service",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "num_stars": {
+                      "type": "integer"
+                    },
+                    "comment": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "num_stars",
+                    "comment"
+                  ],
+                  "example": {
+                    "num_stars": 5,
+                    "comment": "The best English learning app ever"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Rating Information",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Rating"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/me/devices/": {
+        "post": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Add new FCM Device",
+          "description": "Add new FCM Device",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "description": "Optional description in *Markdown*",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "registration_id": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "ios",
+                        "android",
+                        "web"
+                      ]
+                    },
+                    "device_id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "registration_id",
+                    "type"
+                  ],
+                  "example": {
+                    "name": "Device-IOS-1,",
+                    "device_id": "12345678,",
+                    "registration_id": "3a74e4c484cd96dbb9bfcf01d2bf5a",
+                    "type": "ios"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Device Infomation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/FCMDevice"
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/notifications/": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get list notifications",
+          "description": "Get list notifications",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "parameters": [
+            {
+              "$ref": "#/components/parameters/PageParam"
+            },
+            {
+              "$ref": "#/components/parameters/PageSizeParam"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A JSON array of user names",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "count": {
+                        "type": "integer",
+                        "example": 120
+                      },
+                      "next": {
+                        "type": "string",
+                        "example": "https://api.example.org/notifications/?page=5"
+                      },
+                      "previous": {
+                        "type": "string",
+                        "example": "https://api.example.org/notifications/?page=3"
+                      },
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer",
+                              "example": 1
+                            },
+                            "title": {
+                              "type": "string",
+                              "example": "add new feature"
+                            },
+                            "body": {
+                              "type": "string",
+                              "example": "add new feature, please check"
+                            },
+                            "notify_type": {
+                              "type": "string",
+                              "example": "add-new-feature"
+                            },
+                            "is_read": {
+                              "type": "boolean"
+                            },
+                            "created_at": {
+                              "type": "string",
+                              "format": "datetime",
+                              "example": "2018-10-23T03:44:26.572612Z"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "$ref": "#/components/responses/400BadRequestResponse"
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            }
+          }
+        }
+      },
+      "/notifications/{notify_id}/": {
+        "get": {
+          "tags": [
+            "Users"
+          ],
+          "summary": "Get detail notification",
+          "description": "Optional extended description in CommonMark or HTML.",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "notify_id",
+              "in": "path",
+              "schema": {
+                "type": "integer"
+              },
+              "required": true,
+              "description": "Notify ID",
+              "example": 1
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A Notification object",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Notification"
+                  }
+                }
+              }
+            },
+            "401": {
+              "$ref": "#/components/responses/401UnauthenticatedResponse"
+            },
+            "404": {
+              "$ref": "#/components/responses/404NotFoundResponse"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "User": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "username": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "user_type": {
+              "type": "integer",
+              "enum": [
+                1,
+                2,
+                3
+              ],
+              "description": "1 - FREE / 2 - PREMIUM / 3 - EXPIRED"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "facebook_id": {
+              "type": "string"
+            },
+            "line_id": {
+              "type": "string"
+            },
+            "device_id": {
+              "type": "integer"
+            },
+            "device_type": {
+              "type": "string",
+              "enum": [
+                "ios",
+                "android",
+                "unknown"
+              ]
+            },
+            "created_at": {
+              "type": "string",
+              "format": "datetime"
+            },
+            "updated_at": {
+              "type": "string",
+              "format": "datetime"
+            }
+          },
+          "example": {
+            "id": 1,
+            "username": "Deadpool",
+            "email": "deadpool@gmail.com",
+            "user_type": 1,
+            "status": 1,
+            "facebook_id": "845741028203618",
+            "line_id": "LINE12345798",
+            "created_at": "2018-08-03T10:42:30.910507Z",
+            "updated_at": "2018-08-09T07:20:12.792289Z"
+          }
+        },
+        "Token": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "key": {
+              "type": "string"
+            },
+            "user": {
+              "$ref": "#/components/schemas/User"
+            },
+            "created_at": {
+              "type": "string",
+              "format": "datetime"
+            }
+          }
+        },
+        "ResetToken": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "reset_token": {
+              "type": "string"
+            },
+            "user": {
+              "$ref": "#/components/schemas/User"
+            },
+            "created_at": {
+              "type": "string",
+              "format": "datetime"
+            }
+          }
+        },
+        "ConfirmEmailToken": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "token": {
+              "type": "string"
+            },
+            "user": {
+              "$ref": "#/components/schemas/User"
+            },
+            "created_at": {
+              "type": "string",
+              "format": "datetime"
+            }
+          }
+        }
+      },
+      "parameters": {
+        "AccessTokenParam": {
+          "name": "access_token",
+          "in": "header",
+          "description": "User Access Token",
+          "schema": {
+            "type": "string"
+          },
+          "required": true,
+          "example": "847e9015-e465-4fe6-9d1b-9663b6a82916"
+        },
+        "PageParam": {
+          "name": "page",
+          "in": "query",
+          "description": "Page Number",
+          "schema": {
+            "type": "integer",
+            "default": 1
+          },
+          "required": false,
+          "example": "1"
+        },
+        "PageSizeParam": {
+          "name": "page_size",
+          "in": "query",
+          "description": "Page Size",
+          "schema": {
+            "type": "integer",
+            "default": 10
+          },
+          "required": false,
+          "example": 10
+        }
+      },
+      "securitySchemes": {
+        "bearerAuth": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      },
+      "responses": {
+        "AccessTokenResponse": {
+          "description": "Access token and user info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "access_token": {
+                    "type": "string",
+                    "example": "ios:IOS-123-456:847e9015e4654fe69d1b9663b6a82916"
+                  },
+                  "expired_time": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "user": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "204NoContentResponse": {
+          "description": "NO CONTENT"
+        },
+        "400BadRequestResponse": {
+          "description": "BAD REQUEST"
+        },
+        "401UnauthenticatedResponse": {
+          "description": "UNAUTHENTICATED"
+        },
+        "403ForbiddenResponse": {
+          "description": "NO PERMISSION"
+        },
+        "404NotFoundResponse": {
+          "description": "NOT FOUND"
+        },
+        "409ConflictResponse": {
+          "description": "CONFLICT"
+        }
+      }
+    }
+}
