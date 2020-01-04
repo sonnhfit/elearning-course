@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from apps.online_test import views as online_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+     path('home-page/', online_views.HomePage.as_view()),
+     path('learn/', online_views.Learn.as_view()),
+     path('', online_views.HomePage.as_view()),
 ]
