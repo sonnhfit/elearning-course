@@ -1,0 +1,8 @@
+<svg width="760" height="360" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#6400E4" d="M0 0h760v360H0z"/>
+        <path d="M633 256v-96h127v200H0V200h127v40h126v40h127v-60h127v36h126z" fill="#141C3A"/>
+        <circle fill="#FFE359" cx="117" cy="170" r="30"/>
+        <path d="M127 200l506-37.81" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,7"/>
+    </g>
+</svg>
