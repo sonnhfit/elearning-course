@@ -22,4 +22,6 @@ urlpatterns = [
      path('home-page/', online_views.HomePage.as_view()),
      path('learn/', online_views.Learn.as_view()),
      path('', online_views.HomePage.as_view()),
+     path('login/', online_views.Login.as_view(), name='login_url'),
+     path('login1/', online_views.Login1.as_view(), name='login1_url'),
 ]

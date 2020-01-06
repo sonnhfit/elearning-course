@@ -15,5 +15,16 @@ class Learn(View):
     def get(self, request):
         return render(request, 'learn/learn.html')
 
-        
+
+
+class Login(View):
+
+    def get(self, request):
+        return render(request,'login/login.html')
+
+
+class Login1(View):
+
+    def get(self, request):
+        return render(request,'login1/login1.html')             
     
