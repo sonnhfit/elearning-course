@@ -47,7 +47,7 @@ docker exec -t <db container id>  pg_dumpall -c -U postgres > dump_`date +%d-%m-
 - remove volume sql exist with command : ```docker volume rm <name volume>```
 - create docker db volume blank with command: ```docker-compose up -d db```
   ```docker-compose up -d <db_name_serivice>``` 
-- import sql file with command: ```cat <sqlfile.sql> | docker exec -i <dontainer id> psql -U <username> -d <dbname>```
+- import sql file with command: ```cat <sqlfile.sql> | docker exec -i <container id> psql -U <username> -d <dbname>```
 - for example:   ```cat app-db-2018-11-16.sql | docker exec -i e1a2a1e3ab89 psql -U postgres -d postgres```
 
 - with ``e1a2a1e3ab89`` is docker container id. if you want to get docker container id, you should run docker container with command `` docker-compose up -d`` affter that copy it from terminal console  
