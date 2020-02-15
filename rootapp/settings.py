@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'apps.core',
-    'apps.users'
+    'apps.users',
+    'apps.dashboard'
 ]
 
 MIDDLEWARE = [
@@ -143,6 +145,10 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
 }
+
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
 
 
 CACHES = {
