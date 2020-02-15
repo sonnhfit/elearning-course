@@ -45,8 +45,9 @@ docker exec -t <db container id>  pg_dumpall -c -U postgres > dump_`date +%d-%m-
 - The first  ```docker-compose down```
 - show docker volume ``` docker volume  ls ```
 - remove volume sql exist with command : ```docker volume rm <name volume>```
-- create docker db volume blank with command: ```docker-compose up -d db```
-  ```docker-compose up -d <db_name_serivice>``` 
+- create docker db volume blank with command: ```docker-compose up -d <db_name_serivice>``` 
+- for example: ```docker-compose up -d db``` 
+ 
 - import sql file with command: ```cat <sqlfile.sql> | docker exec -i <container id> psql -U <username> -d <dbname>```
 - for example:   ```cat app-db-2018-11-16.sql | docker exec -i e1a2a1e3ab89 psql -U postgres -d postgres```
 
