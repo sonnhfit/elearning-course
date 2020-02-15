@@ -47,6 +47,14 @@ services:
       - "1234:8080"
     environment:
       SWAGGER_JSON: /app/docs/openapi.json
+  nginx:
+    build: ./nginx-config
+    ports:
+      - 80:80
+    links:
+      - web
+    depends_on:
+      - web
 volumes:
   postgres_data:
   redis_data:
