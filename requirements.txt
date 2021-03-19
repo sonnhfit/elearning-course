@@ -4,7 +4,7 @@ celery==4.2.1
 Django==2.2.2
 django-cors-headers==3.0.2
 django-redis==4.10.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 django-prices==2.1.0
 kombu==4.6.3
 psycopg2-binary==2.7.5
