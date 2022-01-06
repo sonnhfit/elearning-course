@@ -1,6 +1,6 @@
 amqp==2.5.0
 billiard==3.5.0.5
-celery==4.2.1
+celery==5.2.2
 Django==2.2.2
 django-cors-headers==3.0.2
 django-redis==4.10.0
